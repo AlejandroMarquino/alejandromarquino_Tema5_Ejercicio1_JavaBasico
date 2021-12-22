@@ -1,16 +1,16 @@
 package ejercicio1.Tema5;
 
+import java.util.ArrayList;
+
 public class CocheCRUDimpl implements CocheCRUD{
 
         public CocheCRUDimpl(){}
 
-        public void save() {
-                System.out.println("Save nos permite guardar datos.");
+        public void save(Coche coche, ArrayList coches){
+                coches.add(coche);
         }
-        public void findAll() {
-                System.out.println("FindAll nos permite encontrar datos de la BD.");
+        public void findAll(ArrayList coches) {
+                System.out.println(coches);
         }
-        public void delete() {
-                System.out.println("Delete nos permite borrar/eliminar datos.");
-        }
+        public void delete() {}
 }
